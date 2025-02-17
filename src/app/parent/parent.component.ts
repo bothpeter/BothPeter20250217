@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
+  a: number = 0;
+  b: number = 0;
+  result: number = 0;
 
+  onResultCalculated(value: number) {
+    this.result = value;
+  }
 }
